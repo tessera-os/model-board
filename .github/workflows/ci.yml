@@ -1,0 +1,51 @@
+name: CI
+
+# ModelBoard built on macOS 27, the iOS 27 simulator and Linux. It has no
+# test target of its own: the AI SDK's tests exercise it.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  macos:
+    name: macOS
+    runs-on: xcode-27
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use the newest Xcode 27
+        run: sudo xcode-select -s "$(ls -d /Applications/Xcode_27*.app | sort -V | tail -1)"
+      - name: Build
+        run: swift build
+
+  ios:
+    name: iOS simulator
+    runs-on: xcode-27
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use the newest Xcode 27
+        run: sudo xcode-select -s "$(ls -d /Applications/Xcode_27*.app | sort -V | tail -1)"
+      - name: Build for the iOS simulator
+        run: swift build --sdk "$(xcrun --sdk iphonesimulator --show-sdk-path)" --triple arm64-apple-ios27.0-simulator
+
+  linux:
+    name: Linux (${{ matrix.runner }})
+    runs-on: ${{ matrix.runner }}
+    container: swift:6.4.2-noble
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: [ubuntu-24.04, ubuntu-24.04-arm]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: swift build
