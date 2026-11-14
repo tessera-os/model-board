@@ -31,6 +31,7 @@ extension Providers.OpenAI {
     reasoning: true,
     promptCaching: false,
     remoteIDs: [
+      ModelCatalog.remote(.nvidiaNIM, .openAI, .global, "openai/gpt-oss-120b"),
       ModelCatalog.remote(.openRouter, .openAI, .global, "openai/gpt-oss-120b")
     ]
   )
@@ -48,6 +49,7 @@ extension Providers.OpenAI {
     reasoning: true,
     promptCaching: true,
     remoteIDs: [
+      ModelCatalog.remote(.nvidiaNIM, .openAI, .global, "openai/gpt-oss-20b"),
       ModelCatalog.remote(.openRouter, .openAI, .global, "openai/gpt-oss-20b")
     ]
   )

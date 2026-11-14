@@ -31,6 +31,7 @@ extension Providers.MiniMax {
     reasoning: true,
     promptCaching: true,
     remoteIDs: [
+      ModelCatalog.remote(.nvidiaNIM, .openAI, .global, "minimaxai/minimax-m2.5"),
       ModelCatalog.remote(.openRouter, .openAI, .global, "minimax/minimax-m2.5")
     ]
   )
@@ -48,6 +49,7 @@ extension Providers.MiniMax {
     reasoning: true,
     promptCaching: true,
     remoteIDs: [
+      ModelCatalog.remote(.nvidiaNIM, .openAI, .global, "minimaxai/minimax-m2.7"),
       ModelCatalog.remote(.openRouter, .openAI, .global, "minimax/minimax-m2.7")
     ]
   )

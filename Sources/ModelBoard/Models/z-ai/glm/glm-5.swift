@@ -31,6 +31,7 @@ extension Providers.ZAI {
     reasoning: true,
     promptCaching: true,
     remoteIDs: [
+      ModelCatalog.remote(.nvidiaNIM, .openAI, .global, "z-ai/glm5.1"),
       ModelCatalog.remote(.openRouter, .openAI, .global, "z-ai/glm-5.1")
     ]
   )
@@ -48,6 +49,7 @@ extension Providers.ZAI {
     reasoning: true,
     promptCaching: true,
     remoteIDs: [
+      ModelCatalog.remote(.nvidiaNIM, .openAI, .global, "z-ai/glm-5.2"),
       ModelCatalog.remote(.openRouter, .openAI, .global, "z-ai/glm-5.2")
     ]
   )
@@ -65,6 +67,7 @@ extension Providers.ZAI {
     reasoning: true,
     promptCaching: true,
     remoteIDs: [
+      ModelCatalog.remote(.nvidiaNIM, .openAI, .global, "z-ai/glm-5.3"),
       ModelCatalog.remote(.openRouter, .openAI, .global, "z-ai/glm-5.3")
     ]
   )
@@ -82,6 +85,7 @@ extension Providers.ZAI {
     reasoning: true,
     promptCaching: true,
     remoteIDs: [
+      ModelCatalog.remote(.nvidiaNIM, .openAI, .global, "z-ai/glm-5.3-flash"),
       ModelCatalog.remote(.openRouter, .openAI, .global, "z-ai/glm-5.3-flash")
     ]
   )

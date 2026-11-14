@@ -31,6 +31,7 @@ extension Providers.DeepSeek {
     reasoning: true,
     promptCaching: true,
     remoteIDs: [
+      ModelCatalog.remote(.nvidiaNIM, .openAI, .global, "deepseek-ai/deepseek-v4-flash"),
       ModelCatalog.remote(.openRouter, .openAI, .global, "deepseek/deepseek-v4-flash")
     ]
   )
@@ -48,6 +49,7 @@ extension Providers.DeepSeek {
     reasoning: true,
     promptCaching: true,
     remoteIDs: [
+      ModelCatalog.remote(.nvidiaNIM, .openAI, .global, "deepseek-ai/deepseek-v4-flash-0731"),
       ModelCatalog.remote(.openRouter, .openAI, .global, "deepseek/deepseek-v4-flash-0731")
     ]
   )
@@ -82,6 +84,7 @@ extension Providers.DeepSeek {
     reasoning: true,
     promptCaching: true,
     remoteIDs: [
+      ModelCatalog.remote(.nvidiaNIM, .openAI, .global, "deepseek-ai/deepseek-v4-pro"),
       ModelCatalog.remote(.openRouter, .openAI, .global, "deepseek/deepseek-v4-pro")
     ]
   )

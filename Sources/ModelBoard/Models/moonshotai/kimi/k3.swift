@@ -14,6 +14,7 @@ extension Providers.MoonshotAI {
     reasoning: true,
     promptCaching: true,
     remoteIDs: [
+      ModelCatalog.remote(.nvidiaNIM, .openAI, .global, "moonshotai/kimi-k3"),
       ModelCatalog.remote(.openRouter, .openAI, .global, "moonshotai/kimi-k3")
     ]
   )

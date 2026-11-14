@@ -14,6 +14,7 @@ extension Providers.StepFun {
     reasoning: true,
     promptCaching: false,
     remoteIDs: [
+      ModelCatalog.remote(.nvidiaNIM, .openAI, .global, "stepfun-ai/step-3.5-flash"),
       ModelCatalog.remote(.openRouter, .openAI, .global, "stepfun/step-3.5-flash")
     ]
   )

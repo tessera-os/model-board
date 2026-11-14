@@ -626,6 +626,7 @@ extension Providers.Qwen {
     reasoning: false,
     promptCaching: false,
     remoteIDs: [
+      ModelCatalog.remote(.nvidiaNIM, .openAI, .global, "qwen/qwen3-next-80b-a3b-instruct"),
       ModelCatalog.remote(.openRouter, .openAI, .global, "qwen/qwen3-next-80b-a3b-instruct")
     ]
   )
@@ -643,6 +644,7 @@ extension Providers.Qwen {
     reasoning: true,
     promptCaching: false,
     remoteIDs: [
+      ModelCatalog.remote(.nvidiaNIM, .openAI, .global, "qwen/qwen3-next-80b-a3b-thinking"),
       ModelCatalog.remote(.openRouter, .openAI, .global, "qwen/qwen3-next-80b-a3b-thinking")
     ]
   )

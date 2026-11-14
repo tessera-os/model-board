@@ -99,6 +99,7 @@ extension Providers.ZAI {
     reasoning: true,
     promptCaching: true,
     remoteIDs: [
+      ModelCatalog.remote(.nvidiaNIM, .openAI, .global, "z-ai/glm4.7"),
       ModelCatalog.remote(.openRouter, .openAI, .global, "z-ai/glm-4.7")
     ]
   )

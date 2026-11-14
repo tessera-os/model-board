@@ -48,6 +48,7 @@ extension Providers.Qwen {
     reasoning: false,
     promptCaching: false,
     remoteIDs: [
+      ModelCatalog.remote(.nvidiaNIM, .openAI, .global, "qwen/qwen2.5-coder-32b-instruct"),
       ModelCatalog.remote(.openRouter, .openAI, .global, "qwen/qwen-2.5-coder-32b-instruct")
     ]
   )
