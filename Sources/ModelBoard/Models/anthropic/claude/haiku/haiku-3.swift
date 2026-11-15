@@ -3,6 +3,7 @@
 extension Providers.Anthropic {
   /// Anthropic: Claude 3 Haiku (anthropic/claude-3-haiku)
   public static let claudeHaiku3 = ModelCatalog.make(
+    displayName: "Claude 3 Haiku",
     provider: .anthropic,
     family: .claude,
     variant: .haiku,

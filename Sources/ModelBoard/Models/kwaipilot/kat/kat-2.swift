@@ -3,6 +3,7 @@
 extension Providers.Kwaipilot {
   /// Kwaipilot: KAT-Coder-Pro V2 (kwaipilot/kat-coder-pro-v2)
   public static let katCoderProV2 = ModelCatalog.make(
+    displayName: "KAT-Coder-Pro V2",
     provider: .kwaipilot,
     family: .kat,
     version: "2",
@@ -20,6 +21,7 @@ extension Providers.Kwaipilot {
 
   /// Kwaipilot: KAT-Coder-Pro V2.5 (kwaipilot/kat-coder-pro-v2.5)
   public static let katCoderProV25 = ModelCatalog.make(
+    displayName: "KAT-Coder-Pro V2.5",
     provider: .kwaipilot,
     family: .kat,
     version: "2.5",

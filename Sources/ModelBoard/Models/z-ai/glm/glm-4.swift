@@ -3,6 +3,7 @@
 extension Providers.ZAI {
   /// Z.ai: GLM 4.5 (z-ai/glm-4.5)
   public static let glm45 = ModelCatalog.make(
+    displayName: "GLM-4.5",
     provider: .zai,
     family: .glm,
     version: "4.5",
@@ -20,6 +21,7 @@ extension Providers.ZAI {
 
   /// Z.ai: GLM 4.5 Air (z-ai/glm-4.5-air)
   public static let glm45Air = ModelCatalog.make(
+    displayName: "GLM-4.5 Air",
     provider: .zai,
     family: .glm,
     version: "4.5",
@@ -37,6 +39,7 @@ extension Providers.ZAI {
 
   /// Z.ai: GLM 4.5V (z-ai/glm-4.5v)
   public static let glm45v = ModelCatalog.make(
+    displayName: "GLM-4.5V",
     provider: .zai,
     family: .glm,
     version: "4.5",
@@ -54,6 +57,7 @@ extension Providers.ZAI {
 
   /// Z.ai: GLM 4.6 (z-ai/glm-4.6)
   public static let glm46 = ModelCatalog.make(
+    displayName: "GLM-4.6",
     provider: .zai,
     family: .glm,
     version: "4.6",
@@ -71,6 +75,7 @@ extension Providers.ZAI {
 
   /// Z.ai: GLM 4.6V (z-ai/glm-4.6v)
   public static let glm46v = ModelCatalog.make(
+    displayName: "GLM-4.6V",
     provider: .zai,
     family: .glm,
     version: "4.6",
@@ -88,6 +93,7 @@ extension Providers.ZAI {
 
   /// Z.ai: GLM 4.7 (z-ai/glm-4.7)
   public static let glm47 = ModelCatalog.make(
+    displayName: "GLM-4.7",
     provider: .zai,
     family: .glm,
     version: "4.7",
@@ -106,6 +112,7 @@ extension Providers.ZAI {
 
   /// Z.ai: GLM 4.7 Flash (z-ai/glm-4.7-flash)
   public static let glm47Flash = ModelCatalog.make(
+    displayName: "GLM-4.7 Flash",
     provider: .zai,
     family: .glm,
     version: "4.7",

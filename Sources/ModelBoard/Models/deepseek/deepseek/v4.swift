@@ -3,6 +3,7 @@
 extension Providers.DeepSeek {
   /// DeepSeek: DeepSeek V4.1 Flash (deepseek/deepseek-v4.1-flash)
   public static let deepSeekV41Flash = ModelCatalog.make(
+    displayName: "DeepSeek V4.1 Flash",
     provider: .deepSeek,
     family: .deepSeek,
     version: "v4.1",
@@ -13,6 +14,7 @@ extension Providers.DeepSeek {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
+    reasoningEfforts: ["low", "high", "max"],
     remoteIDs: [
       ModelCatalog.remote(.openRouter, .openAI, .global, "deepseek/deepseek-v4.1-flash")
     ]
@@ -20,6 +22,7 @@ extension Providers.DeepSeek {
 
   /// DeepSeek: DeepSeek V4 Flash 0423 (deepseek/deepseek-v4-flash)
   public static let deepSeekV4Flash = ModelCatalog.make(
+    displayName: "DeepSeek V4 Flash 0423",
     provider: .deepSeek,
     family: .deepSeek,
     version: "v4",
@@ -30,6 +33,8 @@ extension Providers.DeepSeek {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
+    // DeepSeek's thinking guide: other names (`minimal`, `medium`, `xhigh`, `ultra`) are aliases of these.
+    reasoningEfforts: ["low", "high", "max"],
     remoteIDs: [
       ModelCatalog.remote(.nvidiaNIM, .openAI, .global, "deepseek-ai/deepseek-v4-flash"),
       ModelCatalog.remote(.openRouter, .openAI, .global, "deepseek/deepseek-v4-flash")
@@ -38,6 +43,7 @@ extension Providers.DeepSeek {
 
   /// DeepSeek: DeepSeek V4 Flash 0731 (deepseek/deepseek-v4-flash-0731)
   public static let deepSeekV4Flash0731 = ModelCatalog.make(
+    displayName: "DeepSeek V4 Flash 0731",
     provider: .deepSeek,
     family: .deepSeek,
     version: "v4",
@@ -48,6 +54,7 @@ extension Providers.DeepSeek {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
+    reasoningEfforts: ["low", "high", "max"],
     remoteIDs: [
       ModelCatalog.remote(.nvidiaNIM, .openAI, .global, "deepseek-ai/deepseek-v4-flash-0731"),
       ModelCatalog.remote(.openRouter, .openAI, .global, "deepseek/deepseek-v4-flash-0731")
@@ -56,6 +63,7 @@ extension Providers.DeepSeek {
 
   /// DeepSeek: DeepSeek V4 Flash Vision Exp (deepseek/deepseek-v4-flash-vision-exp)
   public static let deepSeekV4FlashVisionExp = ModelCatalog.make(
+    displayName: "DeepSeek V4 Flash Vision Exp",
     provider: .deepSeek,
     family: .deepSeek,
     version: "v4",
@@ -66,6 +74,8 @@ extension Providers.DeepSeek {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
+    // DeepSeek's thinking guide: other names (`minimal`, `medium`, `xhigh`, `ultra`) are aliases of these.
+    reasoningEfforts: ["low", "high", "max"],
     remoteIDs: [
       ModelCatalog.remote(.openRouter, .openAI, .global, "deepseek/deepseek-v4-flash-vision-exp")
     ]
@@ -73,6 +83,7 @@ extension Providers.DeepSeek {
 
   /// DeepSeek: DeepSeek V4 Pro 0423 (deepseek/deepseek-v4-pro)
   public static let deepSeekV4Pro = ModelCatalog.make(
+    displayName: "DeepSeek V4 Pro 0423",
     provider: .deepSeek,
     family: .deepSeek,
     version: "v4",
@@ -83,6 +94,8 @@ extension Providers.DeepSeek {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
+    // DeepSeek's thinking guide: other names (`minimal`, `medium`, `xhigh`, `ultra`) are aliases of these.
+    reasoningEfforts: ["low", "high", "max"],
     remoteIDs: [
       ModelCatalog.remote(.nvidiaNIM, .openAI, .global, "deepseek-ai/deepseek-v4-pro"),
       ModelCatalog.remote(.openRouter, .openAI, .global, "deepseek/deepseek-v4-pro")
@@ -91,6 +104,7 @@ extension Providers.DeepSeek {
 
   /// DeepSeek: DeepSeek V4 Pro 0813 (deepseek/deepseek-v4-pro-0813)
   public static let deepSeekV4Pro0813 = ModelCatalog.make(
+    displayName: "DeepSeek V4 Pro 0813",
     provider: .deepSeek,
     family: .deepSeek,
     version: "v4",
@@ -101,6 +115,7 @@ extension Providers.DeepSeek {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
+    reasoningEfforts: ["low", "high", "max"],
     remoteIDs: [
       ModelCatalog.remote(.openRouter, .openAI, .global, "deepseek/deepseek-v4-pro-0813")
     ]

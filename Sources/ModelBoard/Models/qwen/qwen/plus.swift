@@ -3,6 +3,7 @@
 extension Providers.Qwen {
   /// Qwen: Qwen-Plus (qwen/qwen-plus)
   public static let qwenPlus = ModelCatalog.make(
+    displayName: "Qwen-Plus",
     provider: .qwen,
     family: .qwen,
     version: "plus",
@@ -20,6 +21,7 @@ extension Providers.Qwen {
 
   /// Qwen: Qwen Plus 0728 (qwen/qwen-plus-2025-07-28)
   public static let qwenPlus20250728 = ModelCatalog.make(
+    displayName: "Qwen Plus 0728",
     provider: .qwen,
     family: .qwen,
     version: "plus",

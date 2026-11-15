@@ -3,6 +3,7 @@
 extension Providers.Meituan {
   /// Meituan: LongCat 2.0 (meituan/longcat-2.0)
   public static let longCat20 = ModelCatalog.make(
+    displayName: "LongCat 2.0",
     provider: .meituan,
     family: .longCat,
     version: "2.0",

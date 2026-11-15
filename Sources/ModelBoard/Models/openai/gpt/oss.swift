@@ -3,6 +3,7 @@
 extension Providers.OpenAI {
   /// OpenAI: gpt-oss-safeguard-20b (openai/gpt-oss-safeguard-20b)
   public static let gptOssSafeguard20b = ModelCatalog.make(
+    displayName: "gpt-oss-safeguard-20b",
     provider: .openAI,
     family: .gpt,
     version: "oss",
@@ -20,6 +21,7 @@ extension Providers.OpenAI {
 
   /// OpenAI: gpt-oss-120b (openai/gpt-oss-120b)
   public static let gptOss120b = ModelCatalog.make(
+    displayName: "gpt-oss-120b",
     provider: .openAI,
     family: .gpt,
     version: "oss",
@@ -30,6 +32,7 @@ extension Providers.OpenAI {
     structuredOutput: true,
     reasoning: true,
     promptCaching: false,
+    reasoningEfforts: ["low", "medium", "high"],
     remoteIDs: [
       ModelCatalog.remote(.nvidiaNIM, .openAI, .global, "openai/gpt-oss-120b"),
       ModelCatalog.remote(.openRouter, .openAI, .global, "openai/gpt-oss-120b")
@@ -38,6 +41,7 @@ extension Providers.OpenAI {
 
   /// OpenAI: gpt-oss-20b (openai/gpt-oss-20b)
   public static let gptOss20b = ModelCatalog.make(
+    displayName: "gpt-oss-20b",
     provider: .openAI,
     family: .gpt,
     version: "oss",
@@ -48,6 +52,7 @@ extension Providers.OpenAI {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
+    reasoningEfforts: ["low", "medium", "high"],
     remoteIDs: [
       ModelCatalog.remote(.nvidiaNIM, .openAI, .global, "openai/gpt-oss-20b"),
       ModelCatalog.remote(.openRouter, .openAI, .global, "openai/gpt-oss-20b")

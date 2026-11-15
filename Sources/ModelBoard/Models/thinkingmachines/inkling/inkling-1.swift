@@ -3,6 +3,7 @@
 extension Providers.ThinkingMachines.Inkling {
   /// Inkling Small, a free OpenRouter model without reasoning output.
   public static let small = ModelCatalog.make(
+    displayName: "Inkling Small",
     provider: .thinkingMachines,
     family: .inkling,
     variant: .small,

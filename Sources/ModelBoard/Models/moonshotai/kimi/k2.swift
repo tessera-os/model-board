@@ -3,6 +3,7 @@
 extension Providers.MoonshotAI {
   /// MoonshotAI: Kimi K2 0711 (moonshotai/kimi-k2)
   public static let kimiK2 = ModelCatalog.make(
+    displayName: "Kimi K2 0711",
     provider: .moonshotAI,
     family: .kimi,
     version: "k2",
@@ -21,6 +22,7 @@ extension Providers.MoonshotAI {
 
   /// MoonshotAI: Kimi K2 0905 (moonshotai/kimi-k2-0905)
   public static let kimiK20905 = ModelCatalog.make(
+    displayName: "Kimi K2 0905",
     provider: .moonshotAI,
     family: .kimi,
     version: "k2",
@@ -38,6 +40,7 @@ extension Providers.MoonshotAI {
 
   /// MoonshotAI: Kimi K2.5 (moonshotai/kimi-k2.5)
   public static let kimiK25 = ModelCatalog.make(
+    displayName: "Kimi K2.5",
     provider: .moonshotAI,
     family: .kimi,
     version: "k2.5",
@@ -55,6 +58,7 @@ extension Providers.MoonshotAI {
 
   /// MoonshotAI: Kimi K2.6 (moonshotai/kimi-k2.6)
   public static let kimiK26 = ModelCatalog.make(
+    displayName: "Kimi K2.6",
     provider: .moonshotAI,
     family: .kimi,
     version: "k2.6",
@@ -72,6 +76,7 @@ extension Providers.MoonshotAI {
 
   /// MoonshotAI: Kimi K2.7 Code (moonshotai/kimi-k2.7-code)
   public static let kimiK27Code = ModelCatalog.make(
+    displayName: "Kimi K2.7 Code",
     provider: .moonshotAI,
     family: .kimi,
     version: "k2.7",
@@ -89,6 +94,7 @@ extension Providers.MoonshotAI {
 
   /// MoonshotAI: Kimi K2 Thinking (moonshotai/kimi-k2-thinking)
   public static let kimiK2Thinking = ModelCatalog.make(
+    displayName: "Kimi K2 Thinking",
     provider: .moonshotAI,
     family: .kimi,
     version: "k2",

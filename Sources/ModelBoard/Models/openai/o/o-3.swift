@@ -3,6 +3,7 @@
 extension Providers.OpenAI {
   /// OpenAI: o3 Pro (openai/o3-pro)
   public static let o3Pro = ModelCatalog.make(
+    displayName: "o3-pro",
     provider: .openAI,
     family: .o,
     version: "3",
@@ -13,6 +14,7 @@ extension Providers.OpenAI {
     structuredOutput: true,
     reasoning: true,
     promptCaching: false,
+    reasoningEfforts: ["low", "medium", "high"],
     remoteIDs: [
       ModelCatalog.remote(.openRouter, .openAI, .global, "openai/o3-pro")
     ]
@@ -20,6 +22,7 @@ extension Providers.OpenAI {
 
   /// OpenAI: o3 (openai/o3)
   public static let o3 = ModelCatalog.make(
+    displayName: "o3",
     provider: .openAI,
     family: .o,
     version: "3",
@@ -30,6 +33,7 @@ extension Providers.OpenAI {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
+    reasoningEfforts: ["low", "medium", "high"],
     remoteIDs: [
       ModelCatalog.remote(.openRouter, .openAI, .global, "openai/o3")
     ]
@@ -37,6 +41,7 @@ extension Providers.OpenAI {
 
   /// OpenAI: o3 Mini High (openai/o3-mini-high)
   public static let o3MiniHigh = ModelCatalog.make(
+    displayName: "o3-mini-high",
     provider: .openAI,
     family: .o,
     version: "3",
@@ -54,6 +59,7 @@ extension Providers.OpenAI {
 
   /// OpenAI: o3 Mini (openai/o3-mini)
   public static let o3Mini = ModelCatalog.make(
+    displayName: "o3-mini",
     provider: .openAI,
     family: .o,
     version: "3",
@@ -64,6 +70,7 @@ extension Providers.OpenAI {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
+    reasoningEfforts: ["low", "medium", "high"],
     remoteIDs: [
       ModelCatalog.remote(.openRouter, .openAI, .global, "openai/o3-mini")
     ]

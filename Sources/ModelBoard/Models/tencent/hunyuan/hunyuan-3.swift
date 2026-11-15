@@ -3,6 +3,7 @@
 extension Providers.Tencent {
   /// Tencent: Hy3 (tencent/hy3)
   public static let hy3 = ModelCatalog.make(
+    displayName: "Hy3",
     provider: .tencent,
     family: .hunyuan,
     version: "3",
@@ -13,6 +14,7 @@ extension Providers.Tencent {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
+    reasoningEfforts: ["no_think", "low", "high"],
     remoteIDs: [
       ModelCatalog.remote(.openRouter, .openAI, .global, "tencent/hy3")
     ]
@@ -20,6 +22,7 @@ extension Providers.Tencent {
 
   /// Tencent: Hy3 preview (tencent/hy3-preview)
   public static let hy3Preview = ModelCatalog.make(
+    displayName: "Hy3 preview",
     provider: .tencent,
     family: .hunyuan,
     version: "3",

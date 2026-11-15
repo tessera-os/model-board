@@ -9,12 +9,13 @@ public enum ModelCatalog {
       Providers.OpenAI.GPT.V5_6.sol,
       Providers.OpenAI.GPT.V5_6.luna,
       Providers.OpenAI.GPT.V6.luna,
+      Providers.OpenAI.GPT.V6.sol,
       Providers.OpenAI.GPT.V6_1.sol,
       Providers.Anthropic.Claude.V4_6.opus,
       Providers.Anthropic.Claude.V5_5.opus,
       Providers.Anthropic.Claude.V5_5.sonnet,
       Providers.Anthropic.Claude.V5_5.haiku,
-      Providers.Anthropic.Claude.V5_6.fable,
+      Providers.Anthropic.Claude.V5_2.fable,
       Providers.MiniMax.m1,
       Providers.MiniMax.m2,
       Providers.MiniMax.m3,
@@ -100,6 +101,7 @@ public enum ModelCatalog {
 
   /// Builds a model declaration with the SDK's common capability defaults.
   static func make(
+    displayName: String,
     provider: Provider,
     family: Family,
     variant: Variant? = nil,
@@ -111,9 +113,12 @@ public enum ModelCatalog {
     structuredOutput: Bool = false,
     reasoning: Bool = false,
     promptCaching: Bool = false,
+    reasoningEfforts: [String] = [],
+    thinkingBudget: ThinkingBudget? = nil,
     remoteIDs: [RemoteModelID]
   ) -> Model {
     Model(
+      displayName: displayName,
       identity: ModelIdentity(
         provider: provider,
         family: family,
@@ -127,7 +132,9 @@ public enum ModelCatalog {
         toolCalling: toolCalling,
         structuredOutput: structuredOutput,
         reasoning: reasoning,
-        promptCaching: promptCaching
+        promptCaching: promptCaching,
+        reasoningEfforts: reasoningEfforts,
+        thinkingBudget: thinkingBudget
       ),
       remoteIDs: remoteIDs
     )
@@ -135,12 +142,14 @@ public enum ModelCatalog {
 
   /// Creates a MiniMax M-series model served through OpenRouter.
   static func miniMax(
+    displayName: String,
     _ version: String,
     input: Set<Modality> = [.text],
     structuredOutput: Bool = false,
     promptCaching: Bool = false
   ) -> Model {
     make(
+      displayName: displayName,
       provider: .miniMax,
       family: .m,
       version: version,
@@ -156,8 +165,16 @@ public enum ModelCatalog {
   }
 
   /// Creates a Claude model served directly by Anthropic.
-  static func claudeDirect(_ variant: Variant, version: String, id: String) -> Model {
+  static func claudeDirect(
+    displayName: String,
+    _ variant: Variant,
+    version: String,
+    id: String,
+    reasoningEfforts: [String] = [],
+    thinkingBudget: ThinkingBudget? = nil
+  ) -> Model {
     make(
+      displayName: displayName,
       provider: .anthropic,
       family: .claude,
       variant: variant,
@@ -168,6 +185,8 @@ public enum ModelCatalog {
       structuredOutput: false,
       reasoning: true,
       promptCaching: true,
+      reasoningEfforts: reasoningEfforts,
+      thinkingBudget: thinkingBudget,
       remoteIDs: [remote(.anthropic, .anthropic, .global, id)]
     )
   }

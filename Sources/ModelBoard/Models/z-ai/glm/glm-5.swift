@@ -3,6 +3,7 @@
 extension Providers.ZAI {
   /// Z.ai: GLM 5 (z-ai/glm-5)
   public static let glm5 = ModelCatalog.make(
+    displayName: "GLM-5",
     provider: .zai,
     family: .glm,
     version: "5",
@@ -20,6 +21,7 @@ extension Providers.ZAI {
 
   /// Z.ai: GLM 5.1 (z-ai/glm-5.1)
   public static let glm51 = ModelCatalog.make(
+    displayName: "GLM-5.1",
     provider: .zai,
     family: .glm,
     version: "5.1",
@@ -38,6 +40,7 @@ extension Providers.ZAI {
 
   /// Z.ai: GLM 5.2 (z-ai/glm-5.2)
   public static let glm52 = ModelCatalog.make(
+    displayName: "GLM-5.2",
     provider: .zai,
     family: .glm,
     version: "5.2",
@@ -48,6 +51,8 @@ extension Providers.ZAI {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
+    // Z.ai chat completion API reference: `none` and `minimal` skip thinking, `low` and `medium` map to `high`, `xhigh` maps to `max`.
+    reasoningEfforts: ["none", "minimal", "low", "medium", "high", "xhigh", "max"],
     remoteIDs: [
       ModelCatalog.remote(.nvidiaNIM, .openAI, .global, "z-ai/glm-5.2"),
       ModelCatalog.remote(.openRouter, .openAI, .global, "z-ai/glm-5.2")
@@ -56,6 +61,7 @@ extension Providers.ZAI {
 
   /// Z.ai: GLM 5.3 (z-ai/glm-5.3)
   public static let glm53 = ModelCatalog.make(
+    displayName: "GLM-5.3",
     provider: .zai,
     family: .glm,
     version: "5.3",
@@ -66,6 +72,7 @@ extension Providers.ZAI {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
+    reasoningEfforts: ["low", "high", "max"],
     remoteIDs: [
       ModelCatalog.remote(.nvidiaNIM, .openAI, .global, "z-ai/glm-5.3"),
       ModelCatalog.remote(.openRouter, .openAI, .global, "z-ai/glm-5.3")
@@ -74,6 +81,7 @@ extension Providers.ZAI {
 
   /// Z.ai: GLM 5.3 Flash (z-ai/glm-5.3-flash)
   public static let glm53Flash = ModelCatalog.make(
+    displayName: "GLM-5.3 Flash",
     provider: .zai,
     family: .glm,
     version: "5.3",
@@ -84,6 +92,7 @@ extension Providers.ZAI {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
+    reasoningEfforts: ["low", "high", "max"],
     remoteIDs: [
       ModelCatalog.remote(.nvidiaNIM, .openAI, .global, "z-ai/glm-5.3-flash"),
       ModelCatalog.remote(.openRouter, .openAI, .global, "z-ai/glm-5.3-flash")
@@ -92,6 +101,7 @@ extension Providers.ZAI {
 
   /// Z.ai: GLM 5 Turbo (z-ai/glm-5-turbo)
   public static let glm5Turbo = ModelCatalog.make(
+    displayName: "GLM-5 Turbo",
     provider: .zai,
     family: .glm,
     version: "5",
@@ -109,6 +119,7 @@ extension Providers.ZAI {
 
   /// Z.ai: GLM 5V Turbo (z-ai/glm-5v-turbo)
   public static let glm5vTurbo = ModelCatalog.make(
+    displayName: "GLM-5V Turbo",
     provider: .zai,
     family: .glm,
     version: "5",

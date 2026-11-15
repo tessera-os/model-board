@@ -3,6 +3,7 @@
 extension Providers.OpenAI {
   /// OpenAI: GPT-4o (2024-11-20) (openai/gpt-4o-2024-11-20)
   public static let gpt4o20241120 = ModelCatalog.make(
+    displayName: "GPT-4o (2024-11-20)",
     provider: .openAI,
     family: .gpt,
     version: "4o",
@@ -20,6 +21,7 @@ extension Providers.OpenAI {
 
   /// OpenAI: GPT-4o (2024-08-06) (openai/gpt-4o-2024-08-06)
   public static let gpt4o20240806 = ModelCatalog.make(
+    displayName: "GPT-4o (2024-08-06)",
     provider: .openAI,
     family: .gpt,
     version: "4o",
@@ -37,6 +39,7 @@ extension Providers.OpenAI {
 
   /// OpenAI: GPT-4o-mini (openai/gpt-4o-mini)
   public static let gpt4oMini = ModelCatalog.make(
+    displayName: "GPT-4o mini",
     provider: .openAI,
     family: .gpt,
     version: "4o",
@@ -54,6 +57,7 @@ extension Providers.OpenAI {
 
   /// OpenAI: GPT-4o-mini (2024-07-18) (openai/gpt-4o-mini-2024-07-18)
   public static let gpt4oMini20240718 = ModelCatalog.make(
+    displayName: "GPT-4o mini (2024-07-18)",
     provider: .openAI,
     family: .gpt,
     version: "4o",
@@ -71,6 +75,7 @@ extension Providers.OpenAI {
 
   /// OpenAI: GPT-4o (openai/gpt-4o)
   public static let gpt4o = ModelCatalog.make(
+    displayName: "GPT-4o",
     provider: .openAI,
     family: .gpt,
     version: "4o",
@@ -88,6 +93,7 @@ extension Providers.OpenAI {
 
   /// OpenAI: GPT-4o (2024-05-13) (openai/gpt-4o-2024-05-13)
   public static let gpt4o20240513 = ModelCatalog.make(
+    displayName: "GPT-4o (2024-05-13)",
     provider: .openAI,
     family: .gpt,
     version: "4o",

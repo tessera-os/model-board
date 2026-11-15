@@ -3,6 +3,7 @@
 extension Providers.Tencent {
   /// Tencent: Hunyuan A13B Instruct (tencent/hunyuan-a13b-instruct)
   public static let hunyuanA13bInstruct = ModelCatalog.make(
+    displayName: "Hunyuan A13B Instruct",
     provider: .tencent,
     family: .hunyuan,
     version: "a13b",

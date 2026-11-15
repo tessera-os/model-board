@@ -3,6 +3,7 @@
 extension Providers.InclusionAI {
   /// inclusionAI: Ling 3.0 Flash (inclusionai/ling-3.0-flash)
   public static let ling30Flash = ModelCatalog.make(
+    displayName: "Ling 3.0 Flash",
     provider: .inclusionAI,
     family: .ling,
     version: "3.0",
@@ -20,6 +21,7 @@ extension Providers.InclusionAI {
 
   /// inclusionAI: Ling 3.0 Flash Fin (inclusionai/ling-3.0-flash-fin)
   public static let ling30FlashFin = ModelCatalog.make(
+    displayName: "Ling 3.0 Flash Fin",
     provider: .inclusionAI,
     family: .ling,
     version: "3.0",

@@ -1,5 +1,8 @@
 /// A canonical model identity, its capabilities, and its known endpoints.
 public struct Model: Codable, Sendable, Equatable {
+  /// The model's name as its provider spells it in the provider's own documentation, such as
+  /// "Claude Opus 5.5" or "GPT-6 Sol". Empty for a model built outside the catalog.
+  public var displayName: String
   /// The publisher, family, variant, and release.
   public var identity: ModelIdentity
   /// The content and features supported by the model.
@@ -10,12 +13,17 @@ public struct Model: Codable, Sendable, Equatable {
   /// Creates a model declaration.
   ///
   /// - Parameters:
+  ///   - displayName: The provider's official name for the model. Empty when omitted.
   ///   - identity: The model's canonical identity.
   ///   - capabilities: The content and features it supports.
   ///   - remoteIDs: Known service bindings. Applications can register more with the AI package's RemoteCatalog.
   public init(
-    identity: ModelIdentity, capabilities: ModelCapabilities, remoteIDs: [RemoteModelID] = []
+    displayName: String = "",
+    identity: ModelIdentity,
+    capabilities: ModelCapabilities,
+    remoteIDs: [RemoteModelID] = []
   ) {
+    self.displayName = displayName
     self.identity = identity
     self.capabilities = capabilities
     self.remoteIDs = remoteIDs

@@ -3,6 +3,7 @@
 extension Providers.Google {
   /// Google: Gemini 2.5 Flash (google/gemini-2.5-flash)
   public static let gemini25Flash = ModelCatalog.make(
+    displayName: "Gemini 2.5 Flash",
     provider: .google,
     family: .gemini,
     version: "2.5",
@@ -13,6 +14,7 @@ extension Providers.Google {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
+    reasoningEfforts: ["low", "medium", "high"],
     remoteIDs: [
       ModelCatalog.remote(.openRouter, .openAI, .global, "google/gemini-2.5-flash")
     ]
@@ -20,6 +22,7 @@ extension Providers.Google {
 
   /// Google: Gemini 2.5 Flash Lite (google/gemini-2.5-flash-lite)
   public static let gemini25FlashLite = ModelCatalog.make(
+    displayName: "Gemini 2.5 Flash Lite",
     provider: .google,
     family: .gemini,
     version: "2.5",
@@ -30,6 +33,7 @@ extension Providers.Google {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
+    reasoningEfforts: ["low", "medium", "high"],
     remoteIDs: [
       ModelCatalog.remote(.openRouter, .openAI, .global, "google/gemini-2.5-flash-lite")
     ]
@@ -37,6 +41,7 @@ extension Providers.Google {
 
   /// Google: Gemini 2.5 Pro (google/gemini-2.5-pro)
   public static let gemini25Pro = ModelCatalog.make(
+    displayName: "Gemini 2.5 Pro",
     provider: .google,
     family: .gemini,
     version: "2.5",
@@ -47,6 +52,7 @@ extension Providers.Google {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
+    reasoningEfforts: ["low", "medium", "high"],
     remoteIDs: [
       ModelCatalog.remote(.openRouter, .openAI, .global, "google/gemini-2.5-pro")
     ]
@@ -54,6 +60,7 @@ extension Providers.Google {
 
   /// Google: Gemini 2.5 Pro Preview 06-05 (google/gemini-2.5-pro-preview)
   public static let gemini25ProPreview = ModelCatalog.make(
+    displayName: "Gemini 2.5 Pro Preview 06-05",
     provider: .google,
     family: .gemini,
     version: "2.5",
@@ -71,6 +78,7 @@ extension Providers.Google {
 
   /// Google: Gemini 2.5 Pro Preview 05-06 (google/gemini-2.5-pro-preview-05-06)
   public static let gemini25ProPreview0506 = ModelCatalog.make(
+    displayName: "Gemini 2.5 Pro Preview 05-06",
     provider: .google,
     family: .gemini,
     version: "2.5",

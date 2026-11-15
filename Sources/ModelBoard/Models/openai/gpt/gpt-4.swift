@@ -3,6 +3,7 @@
 extension Providers.OpenAI {
   /// OpenAI: GPT-4 Turbo (openai/gpt-4-turbo)
   public static let gpt4Turbo = ModelCatalog.make(
+    displayName: "GPT-4 Turbo",
     provider: .openAI,
     family: .gpt,
     version: "4",
@@ -20,6 +21,7 @@ extension Providers.OpenAI {
 
   /// OpenAI: GPT-4 Turbo Preview (openai/gpt-4-turbo-preview)
   public static let gpt4TurboPreview = ModelCatalog.make(
+    displayName: "GPT-4 Turbo Preview",
     provider: .openAI,
     family: .gpt,
     version: "4",
@@ -37,6 +39,7 @@ extension Providers.OpenAI {
 
   /// OpenAI: GPT-4 (openai/gpt-4)
   public static let gpt4 = ModelCatalog.make(
+    displayName: "GPT-4",
     provider: .openAI,
     family: .gpt,
     version: "4",
@@ -54,6 +57,7 @@ extension Providers.OpenAI {
 
   /// OpenAI: GPT-4.1 (openai/gpt-4.1)
   public static let gpt41 = ModelCatalog.make(
+    displayName: "GPT-4.1",
     provider: .openAI,
     family: .gpt,
     version: "4.1",
@@ -71,6 +75,7 @@ extension Providers.OpenAI {
 
   /// OpenAI: GPT-4.1 Mini (openai/gpt-4.1-mini)
   public static let gpt41Mini = ModelCatalog.make(
+    displayName: "GPT-4.1 mini",
     provider: .openAI,
     family: .gpt,
     version: "4.1",
@@ -88,6 +93,7 @@ extension Providers.OpenAI {
 
   /// OpenAI: GPT-4.1 Nano (openai/gpt-4.1-nano)
   public static let gpt41Nano = ModelCatalog.make(
+    displayName: "GPT-4.1 nano",
     provider: .openAI,
     family: .gpt,
     version: "4.1",

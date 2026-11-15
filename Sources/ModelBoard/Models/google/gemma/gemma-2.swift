@@ -3,6 +3,7 @@
 extension Providers.Google {
   /// Google: Gemma 2 27B (google/gemma-2-27b-it)
   public static let gemma227bIt = ModelCatalog.make(
+    displayName: "Gemma 2 27B",
     provider: .google,
     family: .gemma,
     version: "2",

@@ -8,8 +8,8 @@ extension Providers {
       public enum V4_6 {}
       /// Claude 5.5 releases.
       public enum V5_5 {}
-      /// Claude 5.6 releases.
-      public enum V5_6 {}
+      /// Claude 5.2 releases.
+      public enum V5_2 {}
     }
   }
 }

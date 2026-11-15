@@ -3,6 +3,7 @@
 extension Providers.Qwen {
   /// Qwen2.5 72B Instruct (qwen/qwen-2.5-72b-instruct)
   public static let qwen2572bInstruct = ModelCatalog.make(
+    displayName: "Qwen2.5 72B Instruct",
     provider: .qwen,
     family: .qwen,
     version: "2.5",
@@ -20,6 +21,7 @@ extension Providers.Qwen {
 
   /// Qwen: Qwen2.5 7B Instruct (qwen/qwen-2.5-7b-instruct)
   public static let qwen257bInstruct = ModelCatalog.make(
+    displayName: "Qwen2.5 7B Instruct",
     provider: .qwen,
     family: .qwen,
     version: "2.5",
@@ -37,6 +39,7 @@ extension Providers.Qwen {
 
   /// Qwen2.5 Coder 32B Instruct (qwen/qwen-2.5-coder-32b-instruct)
   public static let qwen25Coder32bInstruct = ModelCatalog.make(
+    displayName: "Qwen2.5 Coder 32B Instruct",
     provider: .qwen,
     family: .qwen,
     version: "2.5",
@@ -55,6 +58,7 @@ extension Providers.Qwen {
 
   /// Qwen: Qwen2.5 VL 72B Instruct (qwen/qwen2.5-vl-72b-instruct)
   public static let qwen25Vl72bInstruct = ModelCatalog.make(
+    displayName: "Qwen2.5 VL 72B Instruct",
     provider: .qwen,
     family: .qwen,
     version: "2.5",

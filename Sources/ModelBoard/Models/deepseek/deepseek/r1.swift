@@ -3,6 +3,7 @@
 extension Providers.DeepSeek {
   /// DeepSeek: R1 (deepseek/deepseek-r1)
   public static let deepSeekR1 = ModelCatalog.make(
+    displayName: "DeepSeek R1",
     provider: .deepSeek,
     family: .deepSeek,
     version: "r1",
@@ -20,6 +21,7 @@ extension Providers.DeepSeek {
 
   /// DeepSeek: R1 0528 (deepseek/deepseek-r1-0528)
   public static let deepSeekR10528 = ModelCatalog.make(
+    displayName: "DeepSeek R1 0528",
     provider: .deepSeek,
     family: .deepSeek,
     version: "r1",
@@ -37,6 +39,7 @@ extension Providers.DeepSeek {
 
   /// DeepSeek: R1 Distill Llama 70B (deepseek/deepseek-r1-distill-llama-70b)
   public static let deepSeekR1DistillLlama70b = ModelCatalog.make(
+    displayName: "DeepSeek R1 Distill Llama 70B",
     provider: .deepSeek,
     family: .deepSeek,
     version: "r1",

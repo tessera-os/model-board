@@ -3,6 +3,7 @@
 extension Providers.OpenAI {
   /// OpenAI: GPT Chat Latest (openai/gpt-chat-latest)
   public static let gptChatLatest = ModelCatalog.make(
+    displayName: "GPT Chat Latest",
     provider: .openAI,
     family: .gpt,
     version: "chat-latest",

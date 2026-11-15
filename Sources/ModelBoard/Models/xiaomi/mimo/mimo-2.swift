@@ -3,6 +3,7 @@
 extension Providers.Xiaomi {
   /// Xiaomi: MiMo-V2.5 (xiaomi/mimo-v2.5)
   public static let miMoV25 = ModelCatalog.make(
+    displayName: "MiMo-V2.5",
     provider: .xiaomi,
     family: .miMo,
     version: "2.5",
@@ -20,6 +21,7 @@ extension Providers.Xiaomi {
 
   /// Xiaomi: MiMo-V2.5-Pro (xiaomi/mimo-v2.5-pro)
   public static let miMoV25Pro = ModelCatalog.make(
+    displayName: "MiMo-V2.5-Pro",
     provider: .xiaomi,
     family: .miMo,
     version: "2.5",

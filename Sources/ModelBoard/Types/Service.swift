@@ -8,6 +8,8 @@ public enum Service: String, Codable, CaseIterable, Hashable, Sendable {
   case anthropic
   /// OpenRouter's hosted routing service.
   case openRouter
+  /// NVIDIA's hosted NIM API Catalog.
+  case nvidiaNIM
   /// Amazon Bedrock.
   case amazonBedrock
   /// Azure-hosted model endpoints.

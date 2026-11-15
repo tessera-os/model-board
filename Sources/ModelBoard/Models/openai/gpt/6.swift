@@ -1,8 +1,9 @@
 /// Model declarations ported from the matching Kira registry file.
 
 extension Providers.OpenAI {
-  /// OpenAI: GPT-6 Astra (openai/gpt-6-astra)
+  /// OpenAI: GPT-6 Astra (openai/gpt-6-astra). Its effort list has no `none` level.
   public static let gpt6Astra = ModelCatalog.make(
+    displayName: "GPT-6 Astra",
     provider: .openAI,
     family: .gpt,
     version: "6",
@@ -13,6 +14,7 @@ extension Providers.OpenAI {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
+    reasoningEfforts: ["low", "medium", "high", "xhigh", "max"],
     remoteIDs: [
       ModelCatalog.remote(.openRouter, .openAI, .global, "openai/gpt-6-astra")
     ]
@@ -20,6 +22,7 @@ extension Providers.OpenAI {
 
   /// OpenAI: GPT-6 Astra Pro (openai/gpt-6-astra-pro)
   public static let gpt6AstraPro = ModelCatalog.make(
+    displayName: "GPT-6 Astra Pro",
     provider: .openAI,
     family: .gpt,
     version: "6",

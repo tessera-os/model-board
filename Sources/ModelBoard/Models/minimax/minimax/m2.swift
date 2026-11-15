@@ -3,6 +3,7 @@
 extension Providers.MiniMax {
   /// MiniMax: MiniMax M2.1 (minimax/minimax-m2.1)
   public static let miniMaxM21 = ModelCatalog.make(
+    displayName: "MiniMax M2.1",
     provider: .miniMax,
     family: .miniMax,
     version: "m2.1",
@@ -20,6 +21,7 @@ extension Providers.MiniMax {
 
   /// MiniMax: MiniMax M2.5 (minimax/minimax-m2.5)
   public static let miniMaxM25 = ModelCatalog.make(
+    displayName: "MiniMax M2.5",
     provider: .miniMax,
     family: .miniMax,
     version: "m2.5",
@@ -38,6 +40,7 @@ extension Providers.MiniMax {
 
   /// MiniMax: MiniMax M2.7 (minimax/minimax-m2.7)
   public static let miniMaxM27 = ModelCatalog.make(
+    displayName: "MiniMax M2.7",
     provider: .miniMax,
     family: .miniMax,
     version: "m2.7",
@@ -56,6 +59,7 @@ extension Providers.MiniMax {
 
   /// MiniMax: MiniMax M2-her (minimax/minimax-m2-her)
   public static let miniMaxM2Her = ModelCatalog.make(
+    displayName: "MiniMax M2-her",
     provider: .miniMax,
     family: .miniMax,
     version: "m2",
@@ -76,6 +80,7 @@ extension Providers.MiniMax {
 extension Providers.MiniMax {
   /// MiniMax M2, a text model with structured output, tools, and reasoning.
   public static let m2 = ModelCatalog.miniMax(
+    displayName: "MiniMax M2",
     "m2",
     structuredOutput: true,
     promptCaching: false

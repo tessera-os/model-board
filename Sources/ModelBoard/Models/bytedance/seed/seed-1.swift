@@ -3,6 +3,7 @@
 extension Providers.ByteDance {
   /// ByteDance Seed: Seed 1.6 (bytedance-seed/seed-1.6)
   public static let seed16 = ModelCatalog.make(
+    displayName: "Seed 1.6",
     provider: .byteDance,
     family: .seed,
     version: "1.6",
@@ -13,6 +14,7 @@ extension Providers.ByteDance {
     structuredOutput: true,
     reasoning: true,
     promptCaching: false,
+    reasoningEfforts: ["minimal", "low", "medium", "high"],
     remoteIDs: [
       ModelCatalog.remote(.openRouter, .openAI, .global, "bytedance-seed/seed-1.6")
     ]
@@ -20,6 +22,7 @@ extension Providers.ByteDance {
 
   /// ByteDance Seed: Seed 1.6 Flash (bytedance-seed/seed-1.6-flash)
   public static let seed16Flash = ModelCatalog.make(
+    displayName: "Seed 1.6 Flash",
     provider: .byteDance,
     family: .seed,
     version: "1.6",

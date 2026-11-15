@@ -3,6 +3,7 @@
 extension Providers.Baidu {
   /// Baidu: ERNIE 4.5 VL 424B A47B  (baidu/ernie-4.5-vl-424b-a47b)
   public static let ernie45Vl424bA47b = ModelCatalog.make(
+    displayName: "ERNIE 4.5 VL 424B A47B",
     provider: .baidu,
     family: .ernie,
     version: "4.5",

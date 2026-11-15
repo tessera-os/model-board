@@ -3,6 +3,7 @@
 extension Providers.MiniMax {
   /// MiniMax M1, a text model with tool calling and separate reasoning output.
   public static let m1 = ModelCatalog.miniMax(
+    displayName: "MiniMax M1",
     "m1",
     structuredOutput: false,
     promptCaching: false

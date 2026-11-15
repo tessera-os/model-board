@@ -3,6 +3,7 @@
 extension Providers.MiniMax {
   /// MiniMax: MiniMax-01 (minimax/minimax-01)
   public static let miniMax01 = ModelCatalog.make(
+    displayName: "MiniMax-01",
     provider: .miniMax,
     family: .miniMax,
     version: "01",

@@ -3,6 +3,7 @@
 extension Providers.ByteDance {
   /// ByteDance: UI-TARS 7B  (bytedance/ui-tars-1.5-7b)
   public static let uiTars157b = ModelCatalog.make(
+    displayName: "UI-TARS 7B",
     provider: .byteDance,
     family: .uiTars,
     version: "1.5",

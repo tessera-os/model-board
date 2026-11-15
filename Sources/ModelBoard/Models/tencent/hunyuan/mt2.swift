@@ -3,6 +3,7 @@
 extension Providers.Tencent {
   /// Tencent: Hy-MT2-1.8B (tencent/hy-mt2-1.8b)
   public static let hyMt218b = ModelCatalog.make(
+    displayName: "Hy-MT2-1.8B",
     provider: .tencent,
     family: .hunyuan,
     version: "mt2",
@@ -20,6 +21,7 @@ extension Providers.Tencent {
 
   /// Tencent: Hy-MT2-30B-A3B (tencent/hy-mt2-30b-a3b)
   public static let hyMt230bA3b = ModelCatalog.make(
+    displayName: "Hy-MT2-30B-A3B",
     provider: .tencent,
     family: .hunyuan,
     version: "mt2",
@@ -37,6 +39,7 @@ extension Providers.Tencent {
 
   /// Tencent: Hy-MT2-7B (tencent/hy-mt2-7b)
   public static let hyMt27b = ModelCatalog.make(
+    displayName: "Hy-MT2-7B",
     provider: .tencent,
     family: .hunyuan,
     version: "mt2",

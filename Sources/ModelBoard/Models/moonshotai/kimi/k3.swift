@@ -3,6 +3,7 @@
 extension Providers.MoonshotAI {
   /// MoonshotAI: Kimi K3 (moonshotai/kimi-k3)
   public static let kimiK3 = ModelCatalog.make(
+    displayName: "Kimi K3",
     provider: .moonshotAI,
     family: .kimi,
     version: "k3",
@@ -13,6 +14,7 @@ extension Providers.MoonshotAI {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
+    reasoningEfforts: ["low", "high", "max"],
     remoteIDs: [
       ModelCatalog.remote(.nvidiaNIM, .openAI, .global, "moonshotai/kimi-k3"),
       ModelCatalog.remote(.openRouter, .openAI, .global, "moonshotai/kimi-k3")

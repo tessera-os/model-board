@@ -3,6 +3,7 @@
 extension Providers.Google {
   /// Google: Gemini 3 Flash Preview (google/gemini-3-flash-preview)
   public static let gemini3FlashPreview = ModelCatalog.make(
+    displayName: "Gemini 3 Flash Preview",
     provider: .google,
     family: .gemini,
     version: "3",
@@ -13,6 +14,7 @@ extension Providers.Google {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
+    reasoningEfforts: ["minimal", "low", "medium", "high"],
     remoteIDs: [
       ModelCatalog.remote(.openRouter, .openAI, .global, "google/gemini-3-flash-preview")
     ]
@@ -20,6 +22,7 @@ extension Providers.Google {
 
   /// Google: Gemini 3.1 Flash Lite (google/gemini-3.1-flash-lite)
   public static let gemini31FlashLite = ModelCatalog.make(
+    displayName: "Gemini 3.1 Flash Lite",
     provider: .google,
     family: .gemini,
     version: "3.1",
@@ -30,6 +33,7 @@ extension Providers.Google {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
+    reasoningEfforts: ["minimal", "low", "medium", "high"],
     remoteIDs: [
       ModelCatalog.remote(.openRouter, .openAI, .global, "google/gemini-3.1-flash-lite")
     ]
@@ -37,6 +41,7 @@ extension Providers.Google {
 
   /// Google: Gemini 3.1 Flash Lite Preview (google/gemini-3.1-flash-lite-preview)
   public static let gemini31FlashLitePreview = ModelCatalog.make(
+    displayName: "Gemini 3.1 Flash Lite Preview",
     provider: .google,
     family: .gemini,
     version: "3.1",
@@ -47,6 +52,7 @@ extension Providers.Google {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
+    reasoningEfforts: ["minimal", "low", "medium", "high"],
     remoteIDs: [
       ModelCatalog.remote(.openRouter, .openAI, .global, "google/gemini-3.1-flash-lite-preview")
     ]
@@ -54,6 +60,7 @@ extension Providers.Google {
 
   /// Google: Gemini 3.1 Pro Preview (google/gemini-3.1-pro-preview)
   public static let gemini31ProPreview = ModelCatalog.make(
+    displayName: "Gemini 3.1 Pro Preview",
     provider: .google,
     family: .gemini,
     version: "3.1",
@@ -64,6 +71,7 @@ extension Providers.Google {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
+    reasoningEfforts: ["low", "medium", "high"],
     remoteIDs: [
       ModelCatalog.remote(.openRouter, .openAI, .global, "google/gemini-3.1-pro-preview")
     ]
@@ -71,6 +79,7 @@ extension Providers.Google {
 
   /// Google: Gemini 3.1 Pro Preview Custom Tools (google/gemini-3.1-pro-preview-customtools)
   public static let gemini31ProPreviewCustomTools = ModelCatalog.make(
+    displayName: "Gemini 3.1 Pro Preview Custom Tools",
     provider: .google,
     family: .gemini,
     version: "3.1",
@@ -81,6 +90,7 @@ extension Providers.Google {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
+    reasoningEfforts: ["low", "medium", "high"],
     remoteIDs: [
       ModelCatalog.remote(
         .openRouter, .openAI, .global, "google/gemini-3.1-pro-preview-customtools")
@@ -89,6 +99,7 @@ extension Providers.Google {
 
   /// Google: Gemini 3.5 Flash (google/gemini-3.5-flash)
   public static let gemini35Flash = ModelCatalog.make(
+    displayName: "Gemini 3.5 Flash",
     provider: .google,
     family: .gemini,
     version: "3.5",
@@ -99,6 +110,7 @@ extension Providers.Google {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
+    reasoningEfforts: ["minimal", "low", "medium", "high"],
     remoteIDs: [
       ModelCatalog.remote(.openRouter, .openAI, .global, "google/gemini-3.5-flash")
     ]
@@ -106,6 +118,7 @@ extension Providers.Google {
 
   /// Google: Gemini 3.5 Flash Lite (google/gemini-3.5-flash-lite)
   public static let gemini35FlashLite = ModelCatalog.make(
+    displayName: "Gemini 3.5 Flash Lite",
     provider: .google,
     family: .gemini,
     version: "3.5",
@@ -116,6 +129,7 @@ extension Providers.Google {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
+    reasoningEfforts: ["minimal", "low", "medium", "high"],
     remoteIDs: [
       ModelCatalog.remote(.openRouter, .openAI, .global, "google/gemini-3.5-flash-lite")
     ]
@@ -123,6 +137,7 @@ extension Providers.Google {
 
   /// Google: Gemini 3.6 Flash (google/gemini-3.6-flash)
   public static let gemini36Flash = ModelCatalog.make(
+    displayName: "Gemini 3.6 Flash",
     provider: .google,
     family: .gemini,
     version: "3.6",
@@ -133,6 +148,7 @@ extension Providers.Google {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
+    reasoningEfforts: ["minimal", "low", "medium", "high"],
     remoteIDs: [
       ModelCatalog.remote(.openRouter, .openAI, .global, "google/gemini-3.6-flash")
     ]
@@ -140,6 +156,7 @@ extension Providers.Google {
 
   /// Google: Gemini 3.7 Flash (google/gemini-3.7-flash)
   public static let gemini37Flash = ModelCatalog.make(
+    displayName: "Gemini 3.7 Flash",
     provider: .google,
     family: .gemini,
     version: "3.7",
@@ -150,13 +167,15 @@ extension Providers.Google {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
+    reasoningEfforts: ["low", "medium", "high"],
     remoteIDs: [
       ModelCatalog.remote(.openRouter, .openAI, .global, "google/gemini-3.7-flash")
     ]
   )
 
-  /// Google: Gemini 3.8 Flash (google/gemini-3.8-flash)
+  /// Google: Gemini 3.8 Flash (google/gemini-3.8-flash). Its effort list has no `minimal` level.
   public static let gemini38Flash = ModelCatalog.make(
+    displayName: "Gemini 3.8 Flash",
     provider: .google,
     family: .gemini,
     version: "3.8",
@@ -167,6 +186,7 @@ extension Providers.Google {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
+    reasoningEfforts: ["low", "medium", "high"],
     remoteIDs: [
       ModelCatalog.remote(.openRouter, .openAI, .global, "google/gemini-3.8-flash")
     ]
