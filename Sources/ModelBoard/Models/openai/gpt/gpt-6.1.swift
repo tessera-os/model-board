@@ -1,4 +1,23 @@
 extension Providers.OpenAI.GPT.V6_1 {
+  /// GPT 6.1 Terra, served through OpenAI's Responses API for tool calling.
+  public static let terra = ModelCatalog.make(
+    displayName: "GPT-6.1 Terra",
+    provider: .openAI,
+    family: .gpt,
+    variant: .terra,
+    version: "6.1",
+    input: [.text, .image],
+    output: [.text],
+    toolCalling: true,
+    structuredOutput: true,
+    reasoning: true,
+    promptCaching: true,
+    reasoningEfforts: ["none", "low", "medium", "high", "xhigh", "max"],
+    remoteIDs: [
+      ModelCatalog.remote(.openAI, .openAI, .global, "gpt-6.1-terra")
+    ]
+  )
+
   /// GPT 6.1 Sol, through OpenAI (including a Codex subscription's Codex
   /// backend) and OpenRouter. V1 Harmony's default model.
   public static let sol = ModelCatalog.make(
