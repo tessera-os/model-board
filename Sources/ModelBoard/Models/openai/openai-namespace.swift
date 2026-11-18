@@ -10,6 +10,8 @@ extension Providers {
       public enum V6 {}
       /// GPT 6.1.
       public enum V6_1 {}
+      /// GPT 6.2.
+      public enum V6_2 {}
     }
   }
 }

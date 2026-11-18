@@ -12,7 +12,7 @@ extension Providers.OpenAI.GPT.V6_1 {
     structuredOutput: true,
     reasoning: true,
     promptCaching: true,
-    reasoningEfforts: ["none", "low", "medium", "high", "xhigh", "max"],
+    reasoningEfforts: ["low", "medium", "high", "xhigh", "max", "ultra"],
     remoteIDs: [
       ModelCatalog.remote(.openAI, .openAI, .global, "gpt-6.1-terra")
     ]

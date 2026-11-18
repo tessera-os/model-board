@@ -6,6 +6,8 @@ public enum Variant: String, Codable, CaseIterable, Hashable, Sendable {
   case luna
   /// Terra variant.
   case terra
+  /// Astra variant.
+  case astra
   /// Opus variant.
   case opus
   /// Sonnet variant.

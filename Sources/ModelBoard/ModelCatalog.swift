@@ -12,6 +12,8 @@ public enum ModelCatalog {
       Providers.OpenAI.GPT.V6.sol,
       Providers.OpenAI.GPT.V6_1.sol,
       Providers.OpenAI.GPT.V6_1.terra,
+      Providers.OpenAI.GPT.V6_2.sol,
+      Providers.OpenAI.GPT.V6_2.astra,
       Providers.Anthropic.Claude.V4_6.opus,
       Providers.Anthropic.Claude.V5_5.opus,
       Providers.Anthropic.Claude.V5_5.sonnet,
